@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+#featured {
+    padding: 20px;
+    text-align: center;
+}
+
+#product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Evineb Clothes</h1>
+        <nav>
+            <a href="products.html">Shop Now</a>
+            <a href="cart.html">View Cart</a>
+        </nav>
+    </header>
+
+    <section id="featured">
+        <h2>Featured Products</h2>
+        <div id="product-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <div id="cart-items"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        displayCart(); // Call this function to display cart items when cart page loads
+    </script>
+</body>
+</html>
